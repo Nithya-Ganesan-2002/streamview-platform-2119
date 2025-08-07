@@ -1,0 +1,19 @@
+<div class="video-card">
+  <div class="video-thumbnail">
+    <img [src]="thumbnailUrl" alt="Thumbnail"/>
+    <div class="video-duration">{{ duration }}</div>
+  </div>
+  <div class="video-info">
+    <img class="video-avatar" [src]="avatarUrl" alt="Avatar"/>
+    <div class="video-info-text">
+      <div class="video-title">{{ title }}</div>
+      <div class="video-meta">
+        <span class="video-channel">{{ channel }}</span>
+        <span class="video-views">{{ meta }}</span>
+      </div>
+      <div *ngIf="live" class="video-live">
+        <span>●</span> En direct
+      </div>
+    </div>
+  </div>
+</div>

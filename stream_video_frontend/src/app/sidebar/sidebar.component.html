@@ -1,0 +1,20 @@
+<aside class="sidebar">
+  <nav>
+    <div class="filter-options filter-options-vertical">
+      <ng-container *ngFor="let nav of navSections">
+        <ng-container *ngIf="!nav.divider; else dividerTpl">
+          <a
+            href="#"
+            class="filter-btn"
+            [ngClass]="{'active': nav.label === selected}"
+            style="width: 100%; text-align: left;">
+              <span style="margin-right:8px" *ngIf="nav.icon">{{ nav.icon }}</span>{{ nav.label }}
+          </a>
+        </ng-container>
+        <ng-template #dividerTpl>
+          <hr class="filter-divider" />
+        </ng-template>
+      </ng-container>
+    </div>
+  </nav>
+</aside>

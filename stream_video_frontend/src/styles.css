@@ -1,4 +1,50 @@
-/* Global styles for minimalistic design */
+/* Design system tokens from Figma */
+:root {
+  /* Colors */
+  --color-ffffff: #ffffff;
+  --color-c4c4c4: #c4c4c4;
+  --color-000000: #000000;
+  --color-606060: #606060;
+  --color-030303: #030303;
+  --color-909090: #909090;
+  --color-cc0000: #cc0000;
+  --color-f9f9f9: #f9f9f9;
+  --color-333333: #333333;
+  --color-065fd4: #065fd4;
+  --color-cccccc: #cccccc;
+
+  /* Border radius */
+  --radius-sm: 2px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-pill: 99px;
+  --radius-round: 100px;
+  --radius-sidebar: 12px;
+
+  /* Typography */
+  --font-family: 'Roboto', Arial, sans-serif;
+  --typo-xs: 12px;
+  --typo-sm: 13px;
+  --typo-md: 14px;
+  --typo-lg: 16px;
+  --typo-xl: 18px;
+  --weight-normal: 400;
+  --weight-semibold: 500;
+  --weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --sidebar-width: 240px;
+  --max-feed-width: 1200px;
+  --video-card-width: 276px;
+}
+
+/* Reset and layout */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +53,7 @@
 
 html, body {
   height: 100%;
-  background-color: #ffffff;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: var(--color-ffffff);
+  font-family: var(--font-family);
+  color: var(--color-030303);
 }

@@ -1,0 +1,91 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 56px;
+  background: var(--color-ffffff);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid var(--color-cccccc);
+  padding: 0 var(--spacing-xl);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FF0000;
+  letter-spacing: -1px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-section {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.search-input {
+  flex: 1 1 auto;
+  height: 40px;
+  border: 1px solid var(--color-cccccc);
+  border-radius: 20px 0 0 20px;
+  padding: 0 var(--spacing-md);
+  font-size: var(--typo-md);
+  font-family: var(--font-family);
+}
+
+.search-btn {
+  height: 40px;
+  min-width: 40px;
+  border-radius: 0 20px 20px 0;
+  border: 1px solid var(--color-cccccc);
+  background: var(--color-f9f9f9);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.user-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sign-in-btn {
+  background: var(--color-cc0000);
+  color: var(--color-ffffff);
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 0 var(--spacing-lg);
+  height: 32px;
+  font-size: var(--typo-md);
+  font-weight: var(--weight-semibold);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sign-in-btn:hover {
+  background: var(--color-065fd4);
+}

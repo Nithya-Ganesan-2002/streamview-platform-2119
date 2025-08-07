@@ -1,0 +1,35 @@
+.feed-area {
+  flex: 1 1 auto;
+  padding: calc(56px + var(--spacing-lg)) var(--spacing-xl) var(--spacing-xl) var(--spacing-xl);
+  max-width: var(--max-feed-width);
+  margin: 0 auto;
+}
+
+.filterbar {
+  position: sticky;
+  top: 56px;
+  background: var(--color-ffffff);
+  z-index: 10;
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.video-feed-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 1200px) {
+  .feed-area {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+}

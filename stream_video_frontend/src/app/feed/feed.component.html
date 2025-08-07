@@ -1,0 +1,28 @@
+<section class="filterbar">
+  <hr class="filter-divider" />
+  <div class="filter-options">
+    <button
+      *ngFor="let filter of filters"
+      class="filter-btn"
+      [ngClass]="{ 'active': filter === activeFilter }"
+      (click)="setActiveFilter(filter)">
+      {{ filter }}
+    </button>
+  </div>
+  <hr class="filter-divider" />
+</section>
+<section class="video-feed-grid">
+  <div class="row">
+    <app-video-card
+      *ngFor="let video of videos"
+      [thumbnailUrl]="video.thumbnailUrl"
+      [avatarUrl]="video.avatarUrl"
+      [title]="video.title"
+      [channel]="video.channel"
+      [meta]="video.meta"
+      [duration]="video.duration"
+      [live]="video.live"
+    ></app-video-card>
+  </div>
+  <!-- Add more rows as needed, matching Figma data -->
+</section>

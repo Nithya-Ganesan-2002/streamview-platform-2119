@@ -1,0 +1,14 @@
+<nav class="header">
+  <div class="logo-section">
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <span class="logo-text">YouTube</span>
+  </div>
+  <form class="search-section" (ngSubmit)="onSearch()">
+    <input type="text" [(ngModel)]="searchQuery" name="q" class="search-input" placeholder="Rechercher" />
+    <button class="search-btn" type="submit" aria-label="Search">🔍</button>
+  </form>
+  <div class="user-actions">
+    <button class="action-btn" aria-label="More">⋮</button>
+    <button class="sign-in-btn">Se connecter</button>
+  </div>
+</nav>
